@@ -61,6 +61,9 @@ with st.container():
         st.markdown('''**24/7 Availability**''')
         st.markdown('''Access support whenever you need it, with complete privacy and security''')
 
+import streamlit as st
+
+col1, col2, col3 = st.columns(3)
 
 
 with st.container():
@@ -68,14 +71,12 @@ with st.container():
     st.title(":material/crowdsource: Testimonials")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown(''':primary-background["I was hesitant to seek therapy, but Squeak to Speak helped me take the first step. The AI's coping strategies were so helpful, and it matched me with a therapist who truly gets me."  
-                    Anna P.]''')
+        st.markdown('<div style="background-color:#f99dc6">I was hesitant to seek therapy. Anna P.</div>', unsafe_allow_html=True)
     with col2:
-        st.markdown(''':primary-background["The personalized advice I received gave me the confidence to make small, positive changes in my daily routine. I've never felt so understood."  
-                    James R.]''')
+        st.markdown('<div style="background-color:#f99dc6">The advice I received gave me confidence. James R.</div>', unsafe_allow_html=True)
     with col3:
-        st.markdown(''':primary-background["Having someone to talk to 24/7 has been a game-changer. I no longer feel alone."  
-                    Marta S.]''')
+        st.markdown('<div style="background-color:#f99dc6">Having someone to talk to 24/7 has been a game-changer. Marta S.</div>', unsafe_allow_html=True)
+
 
 with st.container():
     st.divider()
