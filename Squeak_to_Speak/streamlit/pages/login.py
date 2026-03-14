@@ -13,7 +13,7 @@ st.title("Welcome Back!")
 authenticator = stauth.Authenticate(users_dict,
     "ab", "ab", 0, "abcdef")
 
-name, authentication_status, username = authenticator.login("main","Logging into your account")
+name, authentication_status, username = authenticator.login("Logging into your account", "main")
 
 
 if authentication_status==False:
