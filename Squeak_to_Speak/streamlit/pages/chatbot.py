@@ -4,10 +4,11 @@ import os
 import sys
 import random
 import time
+st.set_page_config(layout="wide")
 st.session_state.authentication_status = True
 # Redirect to homepage.py if not logged in
 menu()
-st.set_page_config(layout="wide")
+
 @st.dialog("Discover how to benefit from Squeaky")
 def show_help():
     col1, col2=st.columns((3,4))

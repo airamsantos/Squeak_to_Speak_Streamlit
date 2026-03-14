@@ -2,22 +2,23 @@ import streamlit as st
 from menu import menu
 import json
 from streamlit_lottie import st_lottie
+st.set_page_config(layout="wide")
 st.session_state.setdefault("authentication_status", False)
 # Redirect if needed
 menu()
-st.set_page_config(layout="wide")
+
 
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_animation = load_lottiefile("visual_assets\hands.json")  
-lottie_animation2 = load_lottiefile("visual_assets\heart.json")  
+lottie_animation = load_lottiefile("visual_assets/hands.json")  
+lottie_animation2 = load_lottiefile("visual_assets/heart.json")  
 
 with st.container():
     col1, col2,col3= st.columns((4,8,1))
     with col2:
-        st.image(r"visual_assets\Logo__pb.png", width=400)
+        st.image(r"visual_assets/Logo__pb.png", width=400)
 
 with st.container():
     col4, col5 = st.columns((2, 1))
@@ -38,25 +39,25 @@ with st.container():
     with col6:
         col1,col2,col3=st.columns((3,4,4))
         with col2:
-            st.image(r"visual_assets\icon1.png", width=150)
+            st.image(r"visual_assets/icon1.png", width=150)
         st.markdown('''**Personalized Emotional Support**''')
         st.markdown('''Our AI understands your unique emotions and tailors its support to match your needs and pace.''')
     with col7:
         col1,col2,col3=st.columns((2,4,5))
         with col2:
-            st.image(r"visual_assets\icon2.png", width=150)
+            st.image(r"visual_assets/icon2.png", width=150)
         st.markdown('''**Adapted Coping Strategies**''')
         st.markdown('''Receive practical, easy-to-implement strategies that fit seamlessly into your daily life.''')
     with col8:
         col1,col2,col3=st.columns((4,5,5))
         with col2:
-            st.image(r"visual_assets\icon3.png", width=150)
+            st.image(r"visual_assets/icon3.png", width=150)
         st.markdown('''**Connection with Professionals**''')
         st.markdown('''When you're ready, our platform helps you find a therapist or counselor perfectly suited to your personality, preferences, and availability.''')
     with col9:
         col1,col2,col3=st.columns((3,4,4))
         with col2:
-            st.image(r"visual_assets\icon4.png", width=150)
+            st.image(r"visual_assets/icon4.png", width=150)
         st.markdown('''**24/7 Availability**''')
         st.markdown('''Access support whenever you need it, with complete privacy and security''')
    
@@ -88,15 +89,15 @@ with st.container():
             st.switch_page("pages/user_registration_page.py")
     st.divider()
     with space2:
-        st.image(r"visual_assets\logo_pretty.png", width=450)
+        st.image(r"visual_assets/logo_pretty.png", width=450)
 
 with st.container():
     col1, col2, col3, col4= st.columns(4)
     with col1:
-        st.image(r"visual_assets\s1.png", width=350)
+        st.image(r"visual_assets/s1.png", width=350)
     with col2:
-        st.image(r"visual_assets\s2.png", width=350)
+        st.image(r"visual_assets/s2.png", width=350)
     with col3:
-        st.image(r"visual_assets\s3.png", width=350)
+        st.image(r"visual_assets/s3.png", width=350)
     with col4:
-        st.image(r"visual_assets\s4.png", width=350)
+        st.image(r"visual_assets/s4.png", width=350)

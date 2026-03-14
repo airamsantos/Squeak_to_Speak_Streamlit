@@ -2,11 +2,12 @@ import streamlit as st
 from menu import menu
 import json
 from streamlit_lottie import st_lottie
+st.set_page_config(layout="wide")
 st.session_state.setdefault("authentication_status", False)
 # Redirect if neeeded
-#menu()
+menu()
 
-st.set_page_config(layout="wide")
+
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
@@ -57,11 +58,11 @@ with st.container():
         :material/mindfulness: Customer-Centricity & Focus
         
         :material/handshake: Respect, Fairness & Empathy
-                 
+                
         :material/settings_heart: Integrity & Honesty
 
         :material/diversity_3: Diversity & Inclusion
-                 
+                
         :material/visibility: Transparency & Consistency 
         
         :material/workspace_premium: Quality & Innovation""")

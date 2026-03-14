@@ -2,10 +2,11 @@ import streamlit as st
 import json
 from streamlit_lottie import st_lottie
 from menu import menu
+st.set_page_config(layout="wide")
 st.session_state.authentication_status = True
 # Redirect to homepage.py if not logged in
 menu()
-st.set_page_config(layout="wide")
+
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
@@ -29,13 +30,13 @@ with st.container():
 with st.container():
     col7,col1,col2,col3, col4, col5,col6=st.columns((1,2,2,4,2,2,1))
     with col1:
-        st_lottie(load_lottiefile("visual_assets\e1.json"), speed=1, loop=True, quality="low", height=100, width=100)
+        st_lottie(load_lottiefile("visual_assets/e1.json"), speed=1, loop=True, quality="low", height=100, width=100)
     with col2:
-        st_lottie(load_lottiefile("visual_assets\e2.json"), speed=1, loop=True, quality="low", height=100, width=100)
+        st_lottie(load_lottiefile("visual_assets/e2.json"), speed=1, loop=True, quality="low", height=100, width=100)
     with col5:
-        st_lottie(load_lottiefile("visual_assets\e3.json"), speed=1, loop=True, quality="low", height=100, width=100)
+        st_lottie(load_lottiefile("visual_assets/e3.json"), speed=1, loop=True, quality="low", height=100, width=100)
     with col4:
-        st_lottie(load_lottiefile("visual_assets\e4.json"), speed=1, loop=True, quality="low", height=100, width=100)
+        st_lottie(load_lottiefile("visual_assets/e4.json"), speed=1, loop=True, quality="low", height=100, width=100)
     with col3:
         st.header(f":primary[Welcome, {st.session_state.name}]")
 with st.container():

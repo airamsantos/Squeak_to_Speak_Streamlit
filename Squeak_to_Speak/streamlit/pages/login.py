@@ -2,10 +2,11 @@ import streamlit as st
 import streamlit_authenticator as stauth  
 from menu import menu
 from database import users_dict
+st.set_page_config(layout="wide")
 st.session_state.setdefault("authentication_status", False)
 # Redirecting if needed
 menu()
-st.set_page_config(layout="wide")
+
 st.title("Welcome Back!")
 
 
