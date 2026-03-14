@@ -70,13 +70,23 @@ with st.container():
     st.divider()
     st.title(":material/crowdsource: Testimonials")
     col1, col2, col3 = st.columns(3)
-    with col1:
-        st.markdown('<div style="background-color:#f99dc6">I was hesitant to seek therapy. Anna P.</div>', unsafe_allow_html=True)
-    with col2:
-        st.markdown('<div style="background-color:#f99dc6">The advice I received gave me confidence. James R.</div>', unsafe_allow_html=True)
-    with col3:
-        st.markdown('<div style="background-color:#f99dc6">Having someone to talk to 24/7 has been a game-changer. Marta S.</div>', unsafe_allow_html=True)
+    pink_bg = "background-color:#f99dc6; padding: 10px; border-radius: 5px;"
 
+    with col1:
+        st.markdown(
+            f"<div style='{pink_bg}'>I was hesitant to seek therapy, but Squeak to Speak helped me take the first step. The AI's coping strategies were so helpful, and it matched me with a therapist who truly gets me.<br>Anna P.</div>",
+            unsafe_allow_html=True
+        )
+    with col2:
+        st.markdown(
+            f"<div style='{pink_bg}'>The personalized advice I received gave me the confidence to make small, positive changes in my daily routine. I've never felt so understood.<br>James R.</div>",
+            unsafe_allow_html=True
+        )
+    with col3:
+        st.markdown(
+            f"<div style='{pink_bg}'>Having someone to talk to 24/7 has been a game-changer. I no longer feel alone.<br>Marta S.</div>",
+            unsafe_allow_html=True
+        )
 
 with st.container():
     st.divider()
