@@ -4,7 +4,7 @@ import json
 from streamlit_lottie import st_lottie
 st.session_state.setdefault("authentication_status", False)
 # Redirect if neeeded
-menu()
+#menu()
 
 st.set_page_config(layout="wide")
 def load_lottiefile(filepath: str):
