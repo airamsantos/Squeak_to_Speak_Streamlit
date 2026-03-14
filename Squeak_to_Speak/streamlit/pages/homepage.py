@@ -73,16 +73,13 @@ with st.container():
     pink_highlight = "background-color:#ffd6e4; padding:4px 6px; border-radius:5px;"
 
     with col1:
-        st.markdown(f"<span style='{pink_highlight}'>I was hesitant to seek therapy, but Squeak to Speak helped me take the first step.  
-                    Anna P.</span>", unsafe_allow_html=True)
+        st.markdown(f"<span style='{pink_highlight}'>I was hesitant to seek therapy, but Squeak to Speak helped me take the first step.   Anna P.</span>", unsafe_allow_html=True)
 
     with col2:
-        st.markdown(f"<span style='{pink_highlight}'>The personalized advice I received gave me confidence.  
-                    James R.</span>", unsafe_allow_html=True)
+        st.markdown(f"<span style='{pink_highlight}'>The personalized advice I received gave me confidence.   James R.</span>", unsafe_allow_html=True)
 
     with col3:
-        st.markdown(f"<span style='{pink_highlight}'>Having someone to talk to 24/7 has been a game-changer.  
-                    Marta S.</span>", unsafe_allow_html=True)
+        st.markdown(f"<span style='{pink_highlight}'>Having someone to talk to 24/7 has been a game-changer.   Marta S.</span>", unsafe_allow_html=True)
 
 with st.container():
     st.divider()
