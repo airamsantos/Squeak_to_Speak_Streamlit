@@ -103,12 +103,12 @@ for message in st.session_state.messages:
 
 prompt = st.chat_input("How are you feeling today?")
 if prompt:
-    with st.chat_message("user", avatar="visual_assets/Pessoa.png"):
+    with st.chat_message("user", avatar="Squeak_to_Speak/streamlit/visual_assets/Pessoa.png"):
         st.markdown(prompt)
-    st.session_state.messages.append({"role": "user", "content": prompt, "avatar": "visual_assets/Pessoa.png"})
+    st.session_state.messages.append({"role": "user", "content": prompt, "avatar": "Squeak_to_Speak/streamlit/visual_assets/Pessoa.png"})
 
     response = prompt
-    with st.chat_message("assistant",  avatar="visual_assets/Ratinho.png"):
+    with st.chat_message("assistant",  avatar="Squeak_to_Speak/streamlit/visual_assets/Ratinho.png"):
         st.markdown(response)
-    st.session_state.messages.append({"role": "assistant", "content": response, "avatar": "visual_assets/Ratinho.png"})
+    st.session_state.messages.append({"role": "assistant", "content": response, "avatar": "Squeak_to_Speak/streamlit/visual_assets/Ratinho.png"})
 
