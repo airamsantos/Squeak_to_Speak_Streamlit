@@ -7,7 +7,7 @@ st.title("User Registration")
 
 empty_space, button_place = st.columns((18, 1))
 with button_place: 
-    if st.button("", type="secondary", icon=":material/close:"):
+    if st.button("", type="primary", icon=":material/close:"):
         st.switch_page("pages/homepage.py")
 
 with st.form("registration_form"):
