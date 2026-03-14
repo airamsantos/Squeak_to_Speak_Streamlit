@@ -11,7 +11,7 @@ st.title("Welcome Back!")
 
 
 authenticator = stauth.Authenticate(users_dict,
-    "ab", "ab", 0)
+    "ab", "ab", 0, "abcdef")
 
 authenticator.login("main", "Log-in into your account")
 name = st.session_state.get("name")
