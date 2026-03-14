@@ -11,12 +11,12 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_animation = load_lottiefile("visual_assets\person.json")  
+lottie_animation = load_lottiefile("visual_assets/person.json")  
 
 with st.container():
     col1, col3, col5 = st.columns((4, 5, 1))
     with col3:
-        st.image(r"visual_assets\ratinho_rosa.png", width=150)
+        st.image(r"visual_assets/ratinho_rosa.png", width=150)
         st.header(''':primary[About us]''')
 
 with st.container():
@@ -46,7 +46,7 @@ with st.container():
                     The inspiration for ***Squeak to Speak*** emerged from personal experiences and the stories of others, highlighting a pressing need for a solution that bridges the gap between emotional needs and accessible support. Leveraging the power of large language models (LLMs), we envisioned a tool that could offer understanding, empathy, and guidance.      
                     To close this gap, we built ***Squeaky***, an AI assistant designed to provide more than just temporary relief. ***Squeaky*** empowers users with personalized coping strategies and, when the time is right, connects them with professional help—all while respecting their unique pace, preferences, and financial circumstances.''')
     with img:
-        st.image(r"visual_assets\paisagens.png", width=310)
+        st.image(r"visual_assets/paisagens.png", width=310)
 st.divider()
 
 with st.container():
@@ -69,9 +69,9 @@ with st.container():
         st.header(':material/diversity_2: Our Team')
         col1, col2,col3,col4 = st.columns((1,3,1,5))
         with col1:
-                st.image(r"visual_assets\rato_3.png", width=50)
-                st.image(r"visual_assets\rato_4.png", width=50)
-                st.image(r"visual_assets\rato_2.png", width=50)
+                st.image(r"visual_assets/rato_3.png", width=50)
+                st.image(r"visual_assets/rato_4.png", width=50)
+                st.image(r"visual_assets/rato_2.png", width=50)
         with col2: 
                 st.write("""
                         :material/person_pin: **Joana Sanches**  
@@ -83,8 +83,8 @@ with st.container():
                         :material/person_pin: **Margarida Sardinha**  
                         :material/link: [Linked-in](linkedin.com/in/margaridasardinha)""")
         with col3:
-                st.image(r"visual_assets\rato_5.png", width=50)
-                st.image(r"visual_assets\rato_1.png", width=50)
+                st.image(r"visual_assets/rato_5.png", width=50)
+                st.image(r"visual_assets/rato_1.png", width=50)
         with col4:
             st.write("""  
                     :material/person_pin: **Maria Santos**  

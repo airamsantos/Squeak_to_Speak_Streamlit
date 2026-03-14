@@ -21,7 +21,7 @@ def unauthenticated_menu():
  
 
 def menu(start=False, change=False):
-    st.logo("visual_assets\Logo_main.png", size="large")
+    st.logo("visual_assets/Logo_main.png", size="large")
     if start:
        st.switch_page("pages/homepage.py") 
     if change:
